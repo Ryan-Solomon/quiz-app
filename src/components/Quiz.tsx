@@ -13,10 +13,10 @@ export function Quiz() {
         <QuizOption value='mythology'>Mythology</QuizOption>
       </QuizSelect>
       <QuizLabel htmlFor='difficulty'>Difficulty</QuizLabel>
-      <QuizSelect name='category' id='category'>
-        <QuizOption value='sports'>Sports</QuizOption>
-        <QuizOption value='celebrities'>Celebrities</QuizOption>
-        <QuizOption value='mythology'>Mythology</QuizOption>
+      <QuizSelect name='difficulty' id='difficulty'>
+        <QuizOption value='easy'>Easy</QuizOption>
+        <QuizOption value='medium'>Medium</QuizOption>
+        <QuizOption value='hard'>Hard</QuizOption>
       </QuizSelect>
     </StyledQuizContainer>
   );

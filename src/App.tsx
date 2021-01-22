@@ -1,7 +1,8 @@
 import './App.css';
+import QuizScreen from './screens/QuizScreen';
 
 function App() {
-  return <h1>App</h1>;
+  return <QuizScreen />;
 }
 
 export default App;

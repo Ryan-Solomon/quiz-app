@@ -1,3 +1,9 @@
+import Quiz from '../components/Quiz';
+
 export default function QuizScreen() {
-  return <h1>Quiz</h1>;
+  return (
+    <>
+      <Quiz />
+    </>
+  );
 }

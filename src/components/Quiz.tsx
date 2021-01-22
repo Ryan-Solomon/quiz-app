@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export function Quiz() {
+export default function Quiz() {
   return (
     <StyledQuizContainer>
       <QuizLabel htmlFor='number-of-questions'>Number of Questions</QuizLabel>
@@ -41,7 +41,7 @@ const QuizInput = styled.input`
 const QuizSelect = styled.select``;
 
 const QuizOption = styled.option`
-  color: #fff;
+  color: #333;
 `;
 
 const QuizButton = styled.button`

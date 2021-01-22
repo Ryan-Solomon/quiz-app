@@ -19,6 +19,7 @@ export default function Quiz() {
         <QuizOption value='medium'>Medium</QuizOption>
         <QuizOption value='hard'>Hard</QuizOption>
       </QuizSelect>
+      <QuizButton>Start Quiz</QuizButton>
     </StyledQuizContainer>
   );
 }
@@ -66,6 +67,9 @@ const QuizOption = styled.option`
 `;
 
 const QuizButton = styled.button`
-  border: 1px solid teal;
-  color: #dfdfdf;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem;
+  background: none;
+  margin-top: 1rem;
 `;

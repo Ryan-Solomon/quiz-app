@@ -1,7 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export function Quiz() {}
+export function Quiz() {
+  return (
+    <StyledQuizContainer>
+      <QuizLabel htmlFor='number-of-questions'>Number of Questions</QuizLabel>
+      <QuizInput id='number-of-questions' type='text' />
+      <QuizLabel htmlFor='category'>Category</QuizLabel>
+      <QuizSelect name='category' id='category'>
+        <QuizOption value='sports'>Sports</QuizOption>
+        <QuizOption value='celebrities'>Celebrities</QuizOption>
+        <QuizOption value='mythology'>Mythology</QuizOption>
+      </QuizSelect>
+      <QuizLabel htmlFor='difficulty'>Difficulty</QuizLabel>
+      <QuizSelect name='category' id='category'>
+        <QuizOption value='sports'>Sports</QuizOption>
+        <QuizOption value='celebrities'>Celebrities</QuizOption>
+        <QuizOption value='mythology'>Mythology</QuizOption>
+      </QuizSelect>
+    </StyledQuizContainer>
+  );
+}
 
 const StyledQuizContainer = styled.main`
   background: #222;
@@ -16,6 +35,12 @@ const QuizLabel = styled.label`
 `;
 
 const QuizInput = styled.input`
+  color: #fff;
+`;
+
+const QuizSelect = styled.select``;
+
+const QuizOption = styled.option`
   color: #fff;
 `;
 

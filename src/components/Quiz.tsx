@@ -73,3 +73,6 @@ const QuizButton = styled.button`
   background: none;
   margin-top: 1rem;
 `;
+
+// 1 - Add quiz functionality
+// 2 - Add routes

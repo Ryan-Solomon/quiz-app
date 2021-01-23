@@ -1,11 +1,16 @@
+import React from 'react';
 import styled from 'styled-components';
+import Nav from '../components/Nav';
 import Quiz from '../components/Quiz';
 
 export default function QuizScreen() {
   return (
-    <QuizContainer>
-      <Quiz />
-    </QuizContainer>
+    <>
+      <Nav />
+      <QuizContainer>
+        <Quiz />
+      </QuizContainer>
+    </>
   );
 }
 

@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 
 export default function Quiz() {
+  const [numQuestions, setNumQuestions] = useState('10');
+  const categoryRef = useRef();
+  console.log(categoryRef);
+
   return (
     <StyledQuizContainer>
       <QuizTitle>Quiz</QuizTitle>
       <QuizLabel htmlFor='number-of-questions'>Number of Questions</QuizLabel>
-      <QuizInput id='number-of-questions' type='text' />
+      <QuizInput
+        value={numQuestions}
+        onChange={(e) => setNumQuestions(e.target.value)}
+        id='number-of-questions'
+        type='text'
+      />
       <QuizLabel htmlFor='category'>Category</QuizLabel>
+
       <QuizSelect name='category' id='category'>
-        <QuizOption value='sports'>Sports</QuizOption>
+        {/* @ts-ignore */}
+        <QuizOption ref={categoryRef} value='sports'>
+          Sports
+        </QuizOption>
         <QuizOption value='celebrities'>Celebrities</QuizOption>
         <QuizOption value='mythology'>Mythology</QuizOption>
       </QuizSelect>

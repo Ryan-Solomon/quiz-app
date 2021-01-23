@@ -1,3 +1,7 @@
 export default function HomeScreen() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <h1>Home</h1>
+    </>
+  );
 }
